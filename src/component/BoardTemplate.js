@@ -11,7 +11,7 @@ const BoardTemplate = ({ name, children }) => {
 };
 
 const Container = styled.div`
-  margin: 40px 0;
+  margin: 41px 0;
   padding: 10px;
   border: solid lightgray 2px;
   border-radius: 6px;
