@@ -62,11 +62,17 @@ const TabMenu = styled.button`
   display: flex;
   border: none;
   color: gray;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
 
+  div {
+    line-height: 50px;
+  }
+
   & .tab {
-    padding-right: 190px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 200px;
   }
 
   & .tab.is-active {
@@ -75,10 +81,9 @@ const TabMenu = styled.button`
   }
 `;
 const TabContent = styled.div`
-  margin: 50px 0;
+  margin: 90px 0;
   text-align: center;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
 `;
 
 export default Tab;

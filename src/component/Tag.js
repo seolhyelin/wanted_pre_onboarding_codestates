@@ -38,7 +38,7 @@ const Tag = () => {
               <TagContainer key={index}>
                 <Content>{tag}</Content>
                 <DeleteButton id={index} onClick={test3}>
-                  지우기
+                  x
                 </DeleteButton>
               </TagContainer>
             );
@@ -69,11 +69,24 @@ const TagList = styled.ul`
 
 const TagContainer = styled.li`
   display: flex;
+  margin-right: 10px;
+  padding: 10px 6px;
+  background-color: #5504bf;
+  border-radius: 9px;
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  line-height: 30px;
+  color: white;
+`;
 
 const DeleteButton = styled.button`
+  height: 22px;
+  margin-left: 15px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 70%;
+  background-color: white;
   cursor: pointer;
 `;
 

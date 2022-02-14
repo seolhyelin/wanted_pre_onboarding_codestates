@@ -21,7 +21,7 @@ const AppNameContainer = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
   padding: 10px;
   font-family: "Raleway";
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 700;
 `;
 

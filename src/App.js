@@ -17,7 +17,7 @@ const App = () => {
       <BoardTemplate name="Modal">
         <ModalCard />
       </BoardTemplate>
-      <BoardTemplate>
+      <BoardTemplate name="AutoComplete">
         <AutoComplete />
       </BoardTemplate>
       <BoardTemplate name="ClickToEdit">

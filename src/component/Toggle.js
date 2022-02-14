@@ -2,28 +2,33 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const Toggle = () => {
-  const [productThanksCard, setProductThanksCard] = useState(false);
+  const [switchButton, setswitchButton] = useState(false);
 
   return (
     <Container>
       <ToogleBtn
         type="checkbox"
-        checked={productThanksCard}
-        value={productThanksCard}
+        checked={switchButton}
+        value={switchButton}
         onChange={(value) => {
-          setProductThanksCard((e) => !e);
+          setswitchButton((e) => !e);
         }}
         id="switch-etc"
       />
       <Label htmlFor="switch-etc" className="switchLabel">
         <ToogleBall className="ball"></ToogleBall>
       </Label>
+      <SwitchOnOff>
+        {switchButton ? "Toggle Switch On" : "Toggle Switch Off"}
+      </SwitchOnOff>
     </Container>
   );
 };
 
 const Container = styled.div`
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ToogleBtn = styled.input`
@@ -38,6 +43,7 @@ const ToogleBtn = styled.input`
 const Label = styled.label`
   position: relative;
   display: block;
+  margin-top: 60px;
   margin-left: 20px;
   width: 100px;
   height: 38px;
@@ -55,6 +61,12 @@ const ToogleBall = styled.div`
   left: 10px;
   transition: transform 0.2s linear;
   background-color: #eee;
+`;
+const SwitchOnOff = styled.div`
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 18px;
 `;
 
 export default Toggle;

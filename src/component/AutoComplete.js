@@ -25,20 +25,43 @@ const AutoComplete = () => {
   return (
     <Container>
       <Input onChange={search} type="text" />
-      <ResultBox>
-        {result.length > 0 &&
-          result.map((word) => {
+      {result.length > 0 && (
+        <ResultBox>
+          {result.map((word) => {
             return <li>{word}</li>;
           })}
-      </ResultBox>
+        </ResultBox>
+      )}
     </Container>
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  height: 260px;
+`;
 
-const Input = styled.input``;
+const Input = styled.input`
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 11px;
+  font-size: 19px;
+`;
 
-const ResultBox = styled.ul``;
+const ResultBox = styled.ul`
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid lightgray;
+  border-top: none;
+  font-size: 19px;
+  border-radius: 11px;
+  li {
+    &:hover {
+      background: #f2f2f2;
+    }
+  }
+`;
 
 export default AutoComplete;
