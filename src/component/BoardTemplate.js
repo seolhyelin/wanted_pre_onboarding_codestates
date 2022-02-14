@@ -13,12 +13,14 @@ const BoardTemplate = ({ name, children }) => {
 const Container = styled.div`
   margin: 40px 0;
   padding: 10px;
-  border: solid lightgray 1px;
-  border-radius: 4px;
+  border: solid lightgray 2px;
+  border-radius: 6px;
 `;
 
 const AppNameContainer = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
   padding: 10px;
+  font-family: "Raleway";
   font-size: 17px;
   font-weight: 700;
 `;

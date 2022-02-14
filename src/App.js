@@ -3,6 +3,10 @@ import styled from "styled-components";
 import BoardTemplate from "./component/BoardTemplate";
 import Toggle from "./component/Toggle";
 import Tab from "./component/Tab";
+import ModalCard from "./component/ModalCard";
+import ClickToEdit from "./component/ClickToEdit";
+import Tag from "./component/Tag";
+import AutoComplete from "./component/AutoComplete";
 
 const App = () => {
   return (
@@ -10,18 +14,21 @@ const App = () => {
       <BoardTemplate name="Toggle">
         <Toggle />
       </BoardTemplate>
-      <BoardTemplate name="Tab">
-        <Tab />
-      </BoardTemplate>
-      {/* <BoardTemplate>
-        <Tag />
+      <BoardTemplate name="Modal">
+        <ModalCard />
       </BoardTemplate>
       <BoardTemplate>
         <AutoComplete />
       </BoardTemplate>
-      <BoardTemplate>
+      <BoardTemplate name="ClickToEdit">
         <ClickToEdit />
-      </BoardTemplate> */}
+      </BoardTemplate>
+      <BoardTemplate name="Tab">
+        <Tab />
+      </BoardTemplate>
+      <BoardTemplate name="Tag">
+        <Tag />
+      </BoardTemplate>
     </Container>
   );
 };
