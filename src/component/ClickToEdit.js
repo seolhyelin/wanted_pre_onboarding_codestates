@@ -50,6 +50,7 @@ const Input = styled.input`
   margin-left: 10px;
   padding: 9px 15px;
   border: 1px solid lightgray;
+  font-size: 16px;
   text-align: center;
 `;
 
