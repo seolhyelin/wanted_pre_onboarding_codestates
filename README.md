@@ -1,6 +1,6 @@
 
 
-# 🧵wanted_pre_onboarding-pre_project ##
+# 🧵wanted_pre_onboarding_codestates ##
 
 ## **📎 배포주소**
 [배포 주소](https://jolly-cray-3e7871.netlify.app/)
